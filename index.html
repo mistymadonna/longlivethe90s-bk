@@ -1,0 +1,39 @@
+<html>
+<head>
+  <title>LongLiveThe90s</title>
+  <link rel="stylesheet" href="main.css" type="text/css">
+</head>
+<body onresize="onResize()" onload="onLoad()">
+  <header>
+    <!-- <div class="title">
+      LONG LIVE THE '90s
+    </div> -->
+    <img src="uploads/2015/12/banner3.png"/>
+  </header>
+  <!-- <div id="chip" class="title">
+    ALL THAT & A BAG OF CHIPS.
+  </div> -->
+    <!-- <img src="uploads/2015/12/IMG_0016.jpg"/> -->
+    <!-- <img src="uploads/2015/12/90sfashion.png"/>
+     <img src="uploads/2015/12/90sfashion2.png"/> -->
+    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/93uS4Mqm86o" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/N42m3Pk5u54" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/niAqCOrlDtM" frameborder="0" allowfullscreen></iframe>
+    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/qyzqY2wVJaw" frameborder="0" allowfullscreen></iframe>
+
+    <script type="text/javascript">
+      function onLoad() {
+        // More code for onLoad event here
+        onResize();
+      }
+
+      function onResize() {
+          var vids = document.getElementsByClassName('video');
+          for (var i = 0; i < vids.length; i++) {
+            var vid = vids[i];
+            vid.height = vid.clientWidth * 9 / 16;
+          }
+      }
+    </script>
+</body>
+</html>
