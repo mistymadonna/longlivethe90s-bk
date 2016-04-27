@@ -1,43 +1,69 @@
+<!DOCTYPE html>
 <html>
+
 <head>
-  <title>LongLiveThe90s</title>
-  <link rel="stylesheet" href="main.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700,400,300" rel="stylesheet" type="text/css">
+    <meta charset="utf-8">
+    <title>Hey Mulder</title>
+    <meta name="viewport" content="user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous"> -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body onresize="onResize()" onload="onLoad()">
-  <header>
-    <!-- <div class="title">
-      LONG LIVE THE '90s
-    </div> -->
-    <img width="100%" src="uploads/2015/12/banner4.png"/>
-  </header>
-  <!-- <div id="chip" class="title">
-    ALL THAT & A BAG OF CHIPS.
-  </div> -->
-    <!-- <img src="uploads/2015/12/IMG_0016.jpg"/> -->
-    <iframe src="http://8tracks.com/mixes/7612880/player_v3_universal" width="100%"  height="720" class="video" style="border: 0px none;"></iframe>
-    <p class="_8t_embed_p" style="font-size: 11px; line-height: 12px;"><a href="http://8tracks.com/mistymadonna/peaches-cream-february-mixtape?utm_medium=referral&utm_content=mix-page&utm_campaign=embed_button">Peaches &amp; Cream February Mixtape</a> from <a href="http://8tracks.com/mistymadonna?utm_medium=referral&utm_content=mix-page&utm_campaign=embed_button">mistymadonna</a> on <a href="http://8tracks.com?utm_medium=referral&utm_content=mix-page&utm_campaign=embed_button">8tracks Radio</a>.</p>
-    <img width="100%" src="uploads/2016/1/90sfashionweek.png"/>
-    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/NHP1SYiLAJ4" frameborder="0" allowfullscreen></iframe>
-    <img width="100%" src="uploads/2015/12/90sfashion.png"/>
-    <img width="100%" src="uploads/2015/12/90sfashion2.png"/>
-    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/93uS4Mqm86o" frameborder="0" allowfullscreen></iframe>
-    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/N42m3Pk5u54" frameborder="0" allowfullscreen></iframe>
-    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/niAqCOrlDtM" frameborder="0" allowfullscreen></iframe>
-    <iframe width="100%" height="720" class="video" src="https://www.youtube.com/embed/qyzqY2wVJaw" frameborder="0" allowfullscreen></iframe>
 
+<body>
+
+    <header>
+        <div class="inner">
+            <!-- Logo here -->
+            <!-- <img class="logo" src="https://placeholdit.imgix.net/~text?txtsize=18&bg=000000&txt=200%C3%9770&w=200&h=70" /> -->
+            <a href="index.html" class="logo">Hey Mulder</a>
+            <input class="menu-btn" type="checkbox" id="menu-btn" />
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li><a href="fashion.html">Fashion</a></li>
+                <li><a href="video.html">Video</a></li>
+                <li><a href="music.html">Music</a></li>
+                <li><a href="photo.html">Photo</a></li>
+                <li><a href="interviews.html">Interviews</a></li>
+                <li><a href="#" data-toggle="modal" data-target="#myModal">About</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <!-- <img src="uploads/2015/12/IMG_0016.jpg"/> -->
+        <iframe src="http://8tracks.com/mixes/7612880/player_v3_universal" width="100%" height="540" class="video" style="border: 0px none;"></iframe>
+
+        <img width="100%" src="uploads/2016/1/90sfashionweek.png" />
+        <iframe width="100%" height="540" class="video" src="https://www.youtube.com/embed/NHP1SYiLAJ4" frameborder="0" allowfullscreen></iframe>
+        <img width="100%" src="uploads/2015/12/90sfashion.png" />
+        <img width="100%" src="uploads/2015/12/90sfashion2.png" />
+        <iframe width="100%" height="540" class="video" src="https://www.youtube.com/embed/93uS4Mqm86o" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="540" class="video" src="https://www.youtube.com/embed/N42m3Pk5u54" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="540" class="video" src="https://www.youtube.com/embed/niAqCOrlDtM" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="540" class="video" src="https://www.youtube.com/embed/qyzqY2wVJaw" frameborder="0" allowfullscreen></iframe>
+    </main>
     <script type="text/javascript">
-      function onLoad() {
-        // More code for onLoad event here
-        onResize();
-      }
+        function onLoad() {
+            // More code for onLoad event here
+            onResize();
+        }
 
-      function onResize() {
-          var vids = document.getElementsByClassName('video');
-          for (var i = 0; i < vids.length; i++) {
-            var vid = vids[i];
-            vid.height = vid.clientWidth * 9 / 16;
-          }
-      }
+        function onResize() {
+            var vids = document.getElementsByClassName('video');
+            for (var i = 0; i < vids.length; i++) {
+                var vid = vids[i];
+                vid.height = vid.clientWidth * 9 / 16;
+            }
+        }
     </script>
 </body>
+
 </html>
