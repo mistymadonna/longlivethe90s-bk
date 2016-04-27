@@ -25,7 +25,7 @@ header {
       header .inner .menu-btn:hover {
         background-color: #A67DC3; }
     header .inner .menu-btn:checked ~ .menu {
-      max-height: 240px; }
+      max-height: 500px; }
     header .inner .menu-btn:checked ~ .menu-icon .navicon {
       background: transparent; }
       header .inner .menu-btn:checked ~ .menu-icon .navicon:before {
@@ -64,15 +64,15 @@ header {
       clear: none;
       max-height: none;
       float: left;
+      font-size: 19px;
       transition: max-height 0.2s ease-out;
       margin-top: 7px; }
       header .inner .menu li {
         display: inline-block;
-        color: #FFFFFF;
-        font-size: 28px; }
+        color: #FFFFFF; }
         header .inner .menu li a {
           display: flex;
-          padding: 20px 15px;
+          padding: 27px 15px;
           text-decoration: none; }
           header .inner .menu li a:hover {
             background-color: #6CF643; }
@@ -117,6 +117,7 @@ footer {
     clear: both;
     max-height: 0;
     margin: 0;
+    font-size: 15px;
     padding: 0;
     list-style: none;
     overflow: hidden;
