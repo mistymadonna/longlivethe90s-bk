@@ -79,7 +79,7 @@ header {
 
 main {
   max-width: 960px;
-  margin: 2.5% auto;
+  margin: 25px auto;
   flex: 1; }
   main .banner {
     max-width: 100%; }
@@ -103,7 +103,7 @@ main {
 
 footer {
   height: 40px;
-  background: #f4f4f4;
+  background: #FFF;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 50px; }

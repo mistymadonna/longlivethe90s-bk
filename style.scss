@@ -1,7 +1,7 @@
 $max-width: 960px;
 $primary: #303030;
 $header: #FFF;
-$secondary: #f4f4f4;
+$secondary: #FFF;
 $font-std: 'Oswald', sans-serif;
 body {
   font-family: $font-std;
@@ -115,7 +115,7 @@ header {
 }
 main {
   max-width: $max-width;
-  margin: 2.5% auto;
+  margin: 25px auto;
   flex: 1;
   .banner {
     max-width: 100%;
