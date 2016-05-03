@@ -27,6 +27,9 @@ header {
       padding: 18px 20px;
       text-decoration: none;
     }
+    .social-media {
+    float: right;
+    }
     .menu-btn {
       // Don't change.
       display: none;
@@ -140,7 +143,7 @@ main {
   h4 {
     padding-bottom: 10px;
   }
-  .social-media {
+  .social-media2 {
   position: relative;
   right: 5px;
   padding-bottom: 10px;
@@ -157,10 +160,13 @@ footer {
     font-size: 12px;
   }
 }
-@media (max-width: 768px) {
+@media (max-width: 906px) {
   .inner {
     label.menu-icon {
       display: block;
+    }
+    .social-media {
+      display: none;
     }
     ul.menu {
       clear: both;

@@ -20,6 +20,8 @@ header {
       font-size: 35px;
       padding: 18px 20px;
       text-decoration: none; }
+    header .inner .social-media {
+      float: right; }
     header .inner .menu-btn {
       display: none; }
       header .inner .menu-btn:hover {
@@ -96,7 +98,7 @@ main {
 
 .modal-content h4 {
   padding-bottom: 10px; }
-.modal-content .social-media {
+.modal-content .social-media2 {
   position: relative;
   right: 5px;
   padding-bottom: 10px; }
@@ -110,9 +112,11 @@ footer {
   footer .address {
     font-size: 12px; }
 
-@media (max-width: 768px) {
+@media (max-width: 906px) {
   .inner label.menu-icon {
     display: block; }
+  .inner .social-media {
+    display: none; }
   .inner ul.menu {
     clear: both;
     max-height: 0;
