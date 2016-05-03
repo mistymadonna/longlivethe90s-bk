@@ -127,9 +127,9 @@ main {
       padding-top: 5px;
       padding-bottom: 5px;
     }
-    img, iframe {
-      width: 100%;
-    }
+}
+main > img, main > iframe {
+  width: 100%;
 }
 .modal-content {
     h4 {
