@@ -28,11 +28,11 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="fashion.html">Fashion</a></li>
-                <li><a href="video.html">Video</a></li>
-                <li><a href="music.html">Music</a></li>
-                <li><a href="photo.html">Photo</a></li>
-                <li><a href="interviews.html">Interviews</a></li>
+                <li><a href="#" onclick="showOnly('fashion')">Fashion</a></li>
+                <li><a href="#" onclick="showOnly('video')">Video</a></li>
+                <li><a href="#" onclick="showOnly('music')">Music</a></li>
+                <li><a href="#" onclick="showOnly('photo')">Photo</a></li>
+                <li><a href="#" onclick="showOnly('interviews')">Interviews</a></li>
                 <li><a href="#" data-toggle="modal" data-target="#myModal">About</a></li>
             </ul>
             <div class="social-media">
@@ -49,16 +49,17 @@
         <img class="photo fashion" src="uploads/2016/1/maya2.jpg" />
         <iframe class="music" src="http://8tracks.com/mixes/7933649/player_v3_universal" height="540" style="border: 0px none;"></iframe>
         <iframe class="video" height="540" src="https://www.youtube.com/embed/2tvspF8zZ9Q" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" src="http://8tracks.com/mixes/7832125/player_v3_universal" height="540" style="border: 0px none;"></iframe>
+        <iframe class="music" src="http://8tracks.com/mixes/7832125/player_v3_universal" height="540" style="border: 0px none;"></iframe>
         <img class="fashion" src="uploads/2016/1/90sfashionweek.png" />
         <iframe class="video" height="540" src="https://www.youtube.com/embed/NHP1SYiLAJ4" frameborder="0" allowfullscreen></iframe>
         <img class="fashion" src="uploads/2015/12/90sfashion.jpg" />
         <img class="fashion" src="uploads/2015/12/90sfashion2.jpg" />
         <iframe class="music" src="http://8tracks.com/mixes/7612880/player_v3_universal" height="540" style="border: 0px none;"></iframe>
         <iframe class="video" height="540" src="https://www.youtube.com/embed/93uS4Mqm86o" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" height="540" src="https://www.youtube.com/embed/N42m3Pk5u54" frameborder="0" allowfullscreen></iframe>
+        <iframe class="interviews video" height="540" src="https://www.youtube.com/embed/N42m3Pk5u54" frameborder="0" allowfullscreen></iframe>
         <iframe class="interviews video" height="540" src="https://www.youtube.com/embed/niAqCOrlDtM" frameborder="0" allowfullscreen></iframe>
-        <iframe class="video" height="540" src="https://www.youtube.com/embed/qyzqY2wVJaw" frameborder="0" allowfullscreen></iframe>
+        <iframe class="interviews video" height="540" src="https://www.youtube.com/embed/qyzqY2wVJaw" frameborder="0" allowfullscreen></iframe>
+
         <!-- Modal - as long as it's in the page, doesn't matter where-->
         <div class="modal fade" id="myModal" role="dialog">
             <div class="modal-dialog">
@@ -93,6 +94,13 @@
                 var vid = vids[i];
                 vid.height = vid.clientWidth * 9 / 16;
             }
+        }
+
+        function showOnly(className) {
+            // hide all element under "main"
+            $("main").children().hide();
+            // show all the ones we want
+            $("." + className).show();
         }
     </script>
     <footer>
