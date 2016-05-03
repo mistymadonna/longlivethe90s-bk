@@ -28,12 +28,12 @@
             <input class="menu-btn" type="checkbox" id="menu-btn" />
             <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <ul class="menu">
-                <li><a href="#" onclick="showOnly('fashion')">Fashion</a></li>
-                <li><a href="#" onclick="showOnly('video')">Video</a></li>
-                <li><a href="#" onclick="showOnly('music')">Music</a></li>
-                <li><a href="#" onclick="showOnly('photo')">Photo</a></li>
-                <li><a href="#" onclick="showOnly('interviews')">Interviews</a></li>
-                <li><a href="#" data-toggle="modal" data-target="#myModal">About</a></li>
+                <li><a id="fashion">Fashion</a></li>
+                <li><a id="video">Video</a></li>
+                <li><a id="music">Music</a></li>
+                <li><a id="photo">Photo</a></li>
+                <li><a id="interviews">Interviews</a></li>
+                <li><a data-toggle="modal" data-target="#myModal">About</a></li>
             </ul>
             <div class="social-media">
                 <a href="https://www.instagram.com/mistymadonna"><img src="uploads/2016/1/403-instagram.svg" /></a>
@@ -102,6 +102,26 @@
             // show all the ones we want
             $("." + className).show();
         }
+
+        $('#fashion').click(function(){
+            showOnly('fashion');
+        });
+
+        $('#music').click(function(){
+            showOnly('music');
+        });
+
+        $('#photo').click(function(){
+            showOnly('photo');
+        });
+
+        $('#video').click(function(){
+            showOnly('video');
+        });
+
+        $('#interviews').click(function(){
+            showOnly('interviews');
+        });
     </script>
     <footer>
         <div>© Hey Mulder 2016, All Rights Reserved. By: Misty Madonna</div>
